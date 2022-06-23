@@ -1,0 +1,26 @@
+{
+  "name": "restucciamaipa_clothes.html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-sass": "node-sass --include-path scss sass/index.scss css/transalated.css",
+    "watch-sass": "nodemon -e scss -x\"npm run build-sass\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JoseRestuccia/Maipa_Clothes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JoseRestuccia/Maipa_Clothes/issues"
+  },
+  "homepage": "https://github.com/JoseRestuccia/Maipa_Clothes#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.1",
+    "nodemon": "^2.0.16"
+  }
+}

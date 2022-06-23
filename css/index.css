@@ -1,0 +1,139 @@
+/* css global */
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+ }
+body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: #d3c7d4;
+    color: #1e272e;
+    color: #fff;
+    font-size: 16px;
+ }
+a {
+    color: #ffffff;
+     text-decoration: none; /*me saca el subrrallado por default*/
+ }
+
+/*---------------------------------------------------------------------*/
+
+/*Titulo Principal (H1)*/
+h1{
+  display: flex; /*Habilitando flex*/
+  justify-content: center;
+  margin:10px auto;
+}
+
+/*titulo secundario*/
+h2{
+  display: flex; 
+  justify-content: center;
+  margin: 20px auto
+}
+
+
+/*Menu*/
+.nav__main{
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+
+}
+.menu__item{
+  display: inline-block;
+ }
+
+.item__nav {
+    display: flex;
+    list-style: none;
+    gap: 5rem;
+    margin: 0 auto;
+    padding: 10px;
+
+ }
+
+
+ /* cierro enlaces */
+
+ /* abro imagen */
+
+.new__card{
+   margin-top: 20px;
+   gap: 25px;
+   margin: 0 auto;
+ }
+
+div{
+  display: block;
+  margin: 0px 10px;
+ }
+
+ /* Info */
+ .box__info {
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-medium);
+
+}
+
+.info__img {
+  flex: 1 1 50%;
+}
+
+.info__box {
+  flex: 1 1 50%;
+  display: flex;
+  flex-direction: column;
+  padding: var(--spacing-large);
+  gap: var(--spacing-medium);
+}
+
+
+.box__title {
+
+  font-family: var(--font-title);
+  color: var(--primary);
+  font-size: var(--text-medium);
+}
+  /* <!-- armar una caja con flex--> */
+.new__card,
+img{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    padding: 1em;
+    max-width: 100%;
+   }
+  
+/*Tilulo Secundario (h2)*/
+
+/*.containert, p, a{
+  display: grid;;
+}*/
+
+p,a{
+  display: flex;
+  justify-content: center;
+  margin: 5px auto;
+}
+
+ /* CSS contacto */
+
+.direction__item{
+  font-size: medium;
+  color: rgb(87, 71, 29);
+ }
+
+ footer{
+   display: flex;
+   align-content: space-between;
+   background-color: hsl(206, 88%, 3%);
+ }
+
+.casilla__consulta{
+  height: 200px;
+  width: 500px;
+}
+
