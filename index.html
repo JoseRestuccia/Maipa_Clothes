@@ -5,124 +5,136 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-    <header class="menu">
 
-        <h1 class="menu__tittle">MAIPA CLOTHES</h1>
-            <nav class="nav__main"> <!--barra de menu abre--> <!--clase principal de menu -->
-                    <ul class="item__nav">
-                        <li class="menu__item">
-                            <a class="menu__link" href="./index.html">Inicio</a>
-                        </li>
+    <container class="contenedor1">
+        <header class="menu">
 
-                        <li class="menu__item">
-                            <a class="menu__link" href="./views/Coleccion 2022.html">Coleccion 2022</a>
-                        </li>
-
-                        <li class="menu__item">
-                            <a class="menu__link" href="./views/Sale.html">SALE!</a>
-                        </li>
+            <h1 class="menu__tittle">MAIPA CLOTHES</h1>
+                <nav class="nav__main"> <!--barra de menu abre--> <!--clase principal de menu -->
+                        <ul class="item__nav">
+                            <li class="menu__item">
+                                <a class="menu__link" href="./index.html">Inicio</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="./views/Coleccion 2022.html">Coleccion 2022</a>
+                            </li>
+    
+                            <li class="menu__item">
+                                <a class="menu__link" href="./views/Sale.html">SALE!</a>
+                            </li>
+                            
+                            <li class="menu__item"> 
+                                <a class="menu__link" href="./views/contacto.html">Contacto</a>
+    
+                                </li>
+                            
+                            <li class="menu__item">
+                                <a class="menu__link" href="./views/nosotros.html">Nosotros</a>
+                            </li>                            
+                        </ul>
                         
-                        <li class="menu__item"> <a class="menu__link" href="./views/contacto.html">Contacto</li>
-                        
-                        <li class="menu__item">
-                            <a class="menu__link" href="./views/nosotros.html">Nosotros</a>
-                        </li>                            
-                    </ul>
-                    
-            </nav><!--barra de menu cierra-->
+                </nav><!--barra de menu cierra-->
+                <br>
+        </header>
+    
+        <!--Contenido principal-->    
+        <main class="container-fluid">
+            <section id="cards" class="cards row">
+                <h2>¡Nuevos ingresos!</h2> <small></small>
+                <article class=" box col-4">
+                    <picture class="new__card">
+                        <img src="./img/ingreso en marron.jpeg" alt="news1"> 
+                    </picture> 
+                        <h3 class="box__tittle"> Conjunto Sastre</h3>
+                        <p class="box__info">
+                            Precio: $4.100
+                        </p>
+                        <p class="box__info">
+                            Contiene: pantalon, remera y saco
+                        </p>
+    
+                </article>    
+                <article class="box col-4">
+                    <picture  class="new__card">
+                        <img src="./img/ingreso en jean.jpeg" alt="">
+                    </picture>
+                        <h3 class="box__tittle">Conjunto Melody</h3>
+                        <p class="box__info">Precio $3.500
+    
+                        </p>
+                        <p class="box__info">
+                            Contiene: jean, top y camisa
+                        </p>
+    
+                </article>    
+                <article class="box col-4">
+                    <picture class="new__card">
+                        <img src="./img/ingreso en blanco.jpeg" alt="">
+                    </picture>
+                        <h3 class="box__tittle">Conjunto Boho</h3>
+                        <p class="box__info">Precio: $2.900
+    
+                        </p>
+                        <p class="box__info">
+                            Contiene: top y pantalon
+                        </p>
+                </article>
+                <br>
+            </section>
+            <div class="new__card2">
+                <h2>
+                <iframe width="1000" height="588" src="https://www.youtube.com/embed/F8J8oAxDU6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </h2>
+            </div>
+            <!-- casilla de contacto-->
             <br>
-    </header>
-
-    <!--Contenido principal-->    
-    <main class="container-fluid">
-        <section id="cards" class="cards row">
-            <h2>¡Nuevos ingresos!</h2> <small></small>
-            <article class=" box col-4">
-                <picture class="new__card">
-                    <img src="./img/ingreso en marron.jpeg" alt="news1"> 
-                </picture> 
-                    <h3 class="box__tittle"> Conjunto Sastre</h3>
-                    <p class="box__info">
-                        Precio: $4.100
-                    </p>
-                    <p class="box__info">
-                        Contiene: pantalon, remera y saco
-                    </p>
-
-            </article>    
-            <article class="box col-4">
-                <picture  class="new__card">
-                    <img src="./img/ingreso en jean.jpeg" alt="">
-                </picture>
-                    <h3 class="box__tittle">Conjunto Melody</h3>
-                    <p class="box__info">Precio $3.500
-
-                    </p>
-                    <p class="box__info">
-                        Contiene: jean, top y camisa
-                    </p>
-
-            </article>    
-            <article class="box col-4">
-                <picture class="new__card">
-                    <img src="./img/ingreso en blanco.jpeg" alt="">
-                </picture>
-                    <h3 class="box__tittle">Conjunto Boho</h3>
-                    <p class="box__info">Precio: $2.900
-
-                    </p>
-                    <p class="box__info">
-                        Contiene: top y pantalon
-                    </p>
-            </article>
+            <form class="container">
+                <div class="mb-3">
+                  <label for="exampleInputEmail1" class="form-label">Ingresa tu mail</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div class="mb-3">
+                  <label for="exampleInputPassword1" class="form-label px-2">Nº de contacto</label>
+                  <input type="password" class="form-control" id="exampleInputPassword1">
+                </div>
+                <div class="mb-3 form-check">
+                    <textarea name="Casilla de mensajes" placeholder="Envianos tu consulta!" id="" cols="30" rows="10" class="casilla__consulta"></textarea>
+                </div>
+                <div id="emailHelp" class="form-text">¡Podes dejar tu consulta y en breve nos podremos en contacto!</div>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
             <br>
-
-        <div class="new__card2">
-            <h2>
-            <iframe width="1000" height="588" src="https://www.youtube.com/embed/F8J8oAxDU6M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </h2>
-        </div>
-        </section>
-
-        <!-- casilla de contacto-->
+        </header>
+        <!--Fin de contenido pricipal--> 
+    <ul>
+        <li>
+            <a href="./prueba.html"> prueba</a>
+        </li>
+    </ul>
+    
+    <!--Footer-->
         <br>
-        <form class="container">
-            <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Ingresa tu mail</label>
-              <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-            <div class="mb-3">
-              <label for="exampleInputPassword1" class="form-label px-2">Nº de contacto</label>
-              <input type="password" class="form-control" id="exampleInputPassword1">
-            </div>
-            <div class="mb-3 form-check">
-                <textarea name="Casilla de mensajes" placeholder="Envianos tu consulta!" id="" cols="30" rows="10" class="casilla__consulta"></textarea>
-            </div>
-            <div id="emailHelp" class="form-text">¡Podes dejar tu consulta y en breve nos podremos en contacto!</div>
-            </div>
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </form>
-        <br>
-    </header>
-    <!--Fin de contenido pricipal--> 
+            <footer class="backmenu">
+                <br>
+                <ul class="item__nav">
+                    <li class="menu__item">
+                        <a href="https://www.instagram.com/"> Instagram</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="https://twitter.com/"> twitter</a>
+                    </li>
+                </ul>
+                
+            </footer>
 
+    </container>
 
-<!--Footer-->
-    <br>
-        <footer class="backmenu">
-            <br>
-            <ul class="item__nav">
-                <li class="menu__item">
-                    <a href="https://www.instagram.com/"> Instagram</a>
-                </li>
-                <li class="menu__item">
-                    <a href="https://twitter.com/"> twitter</a>
-                </li>
-            </ul>
-            
-        </footer>
     <main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    </main>
 </body>

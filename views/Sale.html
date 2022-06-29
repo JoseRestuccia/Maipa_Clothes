@@ -5,30 +5,76 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200;400&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="../css/hamburguer.css">
     <link rel="stylesheet" href="../css/index.css">
 </head>
+<body>
     <header class="menu">
+        <button class="hamburger hamburger--slider" type="button">
+            <span class="hamburger-box">
+              <span class="hamburger-inner"></span>
+            </span>
+          </button>
         <h1 class="menu__tittle">Menu</h1>
-        <ul class="nav__main">
-            <li  class="item__nav">
-                <a href="../index.html">Inicio</a>
-            </li>
-            <li  class="item__nav">
-                <a href="./contacto.html">Contacto</a>
-            </li>
-            <li  class="item__nav">
-                <a href="./nosotros.html">Nosotros</a>
-            </li>
-            <li  class="item__nav">
-                <a href="./Coleccion 2022.html">Coleccion 2022</a>
-            </li>
-        </ul>
-        <br>
-        <h2  class="menu__tittle">¡Productos en descuento!</h2>
-        <br>
-        <img src="../img/pexels-arina-krasnikova-5418888.jpg" alt="Es una imagen de dos mujeres viendo una camisa blanca" width="60%">
+        <nav class="nav__main">
+            <ul class="nav__main">
+                <li  class="item__nav">
+                    <a class="menu__link" href="../index.html">Inicio</a>
+                </li>
+                <li  class="item__nav">
+                    <a class="menu__link" href="./contacto.html">Contacto</a>
+                </li>
+                <li  class="item__nav">
+                    <a class="menu__link" href="./nosotros.html">Nosotros</a>
+                </li>
+                <li  class="item__nav">
+                    <a class="menu__link" href="./Coleccion 2022.html">Coleccion 2022</a>
+                </li>
+            </ul>
+        </nav>
     </header>
-    <br>
+    <h2 class="menu__tittle">¡Productos en descuento!</h2>
+    <section>
+        <picture class="picture__block">
+            <img class="img__picture1" src="../img/Sweater Aleli.jpeg" alt="Es una imagen de dos mujeres viendo una camisa blanca" width="60%">
+            <h3> Sweater Aleli </h3>
+            <p> Precio: 
+                $3.500 </p>
+        </picture>
+            <picture class="picture__block">
+            <img class="img__picture2" src="../img/Vestido Alai.jpeg" alt="">
+            <h3>
+                Vestido Alai
+            </h3>
+            <p>
+                Precio:
+                $3.500
+            </p>
+        </picture>
+    
+        <picture class="picture__block">
+            <img class="img__picture3" src="../img/Saco California.jpeg" alt="">
+            <h3>
+                Saco California
+            </h3>
+            <p>
+                Precio:
+                $7800
+            </p>
+        </picture>
+        <picture class="picture__block">
+            <img class="img__picture4" src="../img/Tapado Paris.jpeg" alt="">
+            <h3>
+                Tapado Paris
+            </h3>
+            <p>
+                Precio:
+                $9750
+            </p>
+        </picture>
+    </section>
     <footer>
         <br>
         <ul class="item__nav">
@@ -40,7 +86,7 @@
             </li>
         </ul>
     </footer  class="backmenu">
-<body>
-    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>    
+</main>
 </body>
 </html>

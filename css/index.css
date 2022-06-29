@@ -6,18 +6,26 @@
     padding: 0;
  }
 body{
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-family: 'Josefin Sans', sans-serif;
     background-color: #d3c7d4;
     color: #1e272e;
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 16px;
+    margin: 2em;
+    
  }
 a {
     color: #ffffff;
-     text-decoration: none; /*me saca el subrrallado por default*/
- }
+    text-decoration: none; /*me saca el subrrallado por default*/
+}
+
+.a::hover{
+  background-color: rgb(184, 158, 89);
+}
 
 /*---------------------------------------------------------------------*/
+
+/* Titulos */
 
 /*Titulo Principal (H1)*/
 h1{
@@ -33,6 +41,7 @@ h2{
   margin: 20px auto
 }
 
+/*----------------------------------------------------------------------*/
 
 /*Menu*/
 .nav__main{
@@ -43,7 +52,21 @@ h2{
 }
 .menu__item{
   display: inline-block;
- }
+  padding: 2px 3px;
+  align-items: center;
+}
+
+.menu .menu__link {
+  font-size: var(--text-medium);
+  padding: var(--spacing-xsmall) 1.2rem;
+  border: 2px solid white;
+  transition: all 1s;
+  border-radius: 4px;
+  padding: 3px 3px;
+}
+.menu .menu__link:hover {
+  border-color:var(--text-color);
+}
 
 .item__nav {
     display: flex;
@@ -54,15 +77,65 @@ h2{
 
  }
 
+ /* Hamburguer */
+
+.hamburger{
+  display: none;
+}
+
 
  /* cierro enlaces */
 
  /* abro imagen */
+ .img__picture1{
+  margin-top: 20px;
+  gap: 25px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  height: 600px;
+ }
+
+ .img__picture2{
+  margin-top: 20px;
+  gap: 25px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction:row ;
+  max-width: 100%;
+  height: 600px;
+ }
+
+ .img__picture3{
+  margin-top: 20px;
+  gap: 25px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction:row ;
+  max-width: 100%;
+  height: 600px;
+ }
+
+ .img__picture4{
+  margin-top: 20px;
+  gap: 25px;
+  margin: 2em auto;
+  display: flex;
+  flex-direction:row ;
+  max-width: 100%;
+  height: 600px;
+ }
+ .picture__block{
+  display: inline-block;
+ }
 
 .new__card{
+  display: flex;
+  justify-content: center;
    margin-top: 20px;
    gap: 25px;
-   margin: 0 auto;
+   margin: 2em auto;
  }
 
 div{
@@ -102,17 +175,13 @@ div{
 img{
     width: 400px;
     height: 400px;
-    display: flex;
-    padding: 1em;
+    border: 2px solid black;
+    padding: 1px;
     max-width: 100%;
+    border-radius: 10px;
    }
   
-/*Tilulo Secundario (h2)*/
-
-/*.containert, p, a{
-  display: grid;;
-}*/
-
+  /* Cierro imagen */
 p,a{
   display: flex;
   justify-content: center;
@@ -125,7 +194,7 @@ p,a{
   font-size: medium;
   color: rgb(87, 71, 29);
  }
-
+/* Footer */
  footer{
    display: flex;
    align-content: space-between;
@@ -136,4 +205,65 @@ p,a{
   height: 200px;
   width: 500px;
 }
+
+/* CSS Coleccion 2022 */
+
+/* Grilla */
+
+.grid__container {
+
+  display: grid;
+  height: 1400px;
+  /* width: 91em; */
+  grid-template-areas: 'header header header'
+  'menu menu main'
+  'footer footer footer';
+  justify-content: space-evenly;
+  align-content: space-evenly;
+}
+
+.grid__container div{
+  text-align: center;
+  max-width: 100%;
+}
+
+.item1{
+grid-area: header;
+}
+
+.item2{
+  grid-area: main;
+}
+
+.item3{
+ grid-area: menu;
+}
+
+.item4{
+  grid-area: footer;
+}
+
+.main__principal{
+  margin: 4em;
+}
+/* Cierro grilla */
+
+/* Web responsive */
+.contenedor{
+  max-width: 80%;
+  max-width: 1000px;
+}
+
+@media screen and (max-width: 879px) {
+  article {
+      flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  picture {
+      padding: var(--spacing-xsmall);
+  }
+}
+
 
